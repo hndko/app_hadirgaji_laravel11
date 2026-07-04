@@ -57,8 +57,8 @@ class UserSeeder extends Seeder
         // Seeder users dengan jabatan yang diambil dari tabel jabatans
         User::create([
             'nip' => '123456',
-            'name' => 'John Doe',
-            'email' => 'john@example.com',
+            'name' => 'Administrator',
+            'email' => 'admin@example.com',
             'jabatan_id' => $jabatanAdmin->id,
             'role' => 'admin',
             'password' => Hash::make('password'),
@@ -66,8 +66,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'nip' => '654321',
-            'name' => 'Jane Smith',
-            'email' => 'jane@example.com',
+            'name' => 'Karyawan Jane',
+            'email' => 'karyawan01@example.com',
             'jabatan_id' => $jabatanKaryawan->id,
             'role' => 'karyawan',
             'password' => Hash::make('password'),
@@ -75,8 +75,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'nip' => '111222',
-            'name' => 'Alex Helper',
-            'email' => 'alex@example.com',
+            'name' => 'Karyawan Alex',
+            'email' => 'karyawan02@example.com',
             'jabatan_id' => $jabatanHelper->id,
             'role' => 'karyawan',
             'password' => Hash::make('password'),
@@ -84,8 +84,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'nip' => '333444',
-            'name' => 'Michael Tukang',
-            'email' => 'michael@example.com',
+            'name' => 'Karyawan Michael',
+            'email' => 'karyawan03@example.com',
             'jabatan_id' => $jabatanTukang->id,
             'role' => 'karyawan',
             'password' => Hash::make('password'),
